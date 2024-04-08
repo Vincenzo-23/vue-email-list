@@ -8,7 +8,11 @@
 </head>
 <body>
     <div id="app">
-
+        <h1>{{ message }}</h1>
+        <button @click="fetchEmails(10)" >Genera emails</button>
+        <ul>
+            <li v-for="mail in emails">{{ mail }}</li>
+        </ul>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
